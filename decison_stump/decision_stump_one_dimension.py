@@ -24,8 +24,6 @@ def data_generator(size):
     x_arr = np.random.uniform(-1, 1, size)
     y_arr = sign_zero_as_neg(x_arr)
     y_arr = np.where(np.random.uniform(0, 1, size) < 0.2, -y_arr, y_arr)
-    print(x_arr)
-    print(y_arr)
     return x_arr, y_arr
 
 

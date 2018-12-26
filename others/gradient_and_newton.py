@@ -2,6 +2,10 @@
 # Author: Evan Mi
 import numpy as np
 
+"""
+作业三中使用梯度下降和牛顿法进行迭代
+"""
+
 
 def update(u, v, eta):
     u_tem = u - eta * (np.exp(u) + v * np.exp(u*v) + 2 * u - 2 * v - 3)
